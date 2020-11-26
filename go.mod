@@ -1,4 +1,4 @@
-module goblog
+module goCode/github.com
 
 go 1.15
 
