@@ -419,9 +419,6 @@ func main()  {
 	route.Initialize()
 	router = route.Router
 
-	router.HandleFunc("/", homeHandler).Methods("GET").Name("home")
-	router.HandleFunc("/about", aboutHandler).Methods("GET").Name("about")
-
 	router.HandleFunc("/articles/{id:[0-9]+}", aritlcesShowHandler).Methods("GET").Name("articles.show")
 	router.HandleFunc("/articles", aritclesIndexHandler).Methods("GET").Name("articles.index")
 	router.HandleFunc("/articles", aritlcesStoreHandler).Methods("POST").Name("articles.store")
